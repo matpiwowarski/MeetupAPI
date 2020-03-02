@@ -5,7 +5,7 @@ namespace MeetupAPI.Entities
 {
     public class MeetupContext: DbContext
     {
-        private string _connectionString = "Server=(localdb)\\mssqllocaldb;Database=MeetupDb;Trusted_Connection=True;";
+        private string _connectionString = "Server=localhost;Database=MeetupDb;Trusted_Connection=false;User=sa;Password=reallyStrongPwd123;";
 
         public DbSet<Meetup> Meetups { get; set; }
         public DbSet<Location> Locations { get; set; }
